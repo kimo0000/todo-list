@@ -1,13 +1,83 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+* {
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  background: rgb(55, 55, 223);
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  color: white;
 }
+
+.container {
+  width: 60%;
+  margin: 100px auto;
+}
+
+h1 {
+  text-align: center;
+}
+
+.listeItem {
+  background: white;
+  color: #333;
+}
+
+.listeItem span {
+  display: inline-block;
+  text-align: center;
+  padding: 10px;
+  border: 0.1px solid #eee;
+}
+
+.listeItem p {
+  text-align: center;
+  margin: 0;
+  padding: 10px ;
+  color: red;
+}
+
+.listeItem span.title {
+  background: rgb(78, 78, 231);
+  color: white;
+
+  
+}
+
+.listeItem span.name,
+form input[type=text] {
+  width: 60%;
+}
+
+.listeItem span.age,
+form input[type=number] {
+  width: 30%;
+}
+
+.listeItem span.action,
+form button {
+  width: 10%;
+}
+
+.listeItem .action {
+  width: 10%;
+  padding: 10px;
+  color: red;
+  cursor: pointer;
+}
+
+form input {
+  padding: 10px;
+  background: rgb(238, 220, 220);
+}
+
+form button {
+  padding: 10px;
+  cursor: pointer;
+  color: #333;
+  background: green;
+  font-weight: bold;
+}
+
+
